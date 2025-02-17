@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      height: 100vh;
+      width: 100vw;
+      background-image: url('7.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: #f9f9f9;
+    }
+    .navbar-default {
+      background-color: rgba(0, 0, 0, 0.7);
+      border-color: transparent;
+    }
+    .navbar-default .navbar-nav > li > a {
+      color: white;
+      font-size: 18px;
+    }
+    .navbar-default .navbar-nav > .active > a {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    .ser-title {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #4CAF50;
+    }
+    .botm-line {
+      border-bottom: 2px solid #4CAF50;
+      width: 50px;
+      margin: 0 auto 20px;
+    }
+    .contact-form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .contact-form .form-control {
+      margin-bottom: 15px;
+    }
+    .contact-form button {
+      background-color: #4CAF50;
+      border-color: #4CAF50;
+    }
+    .contact-form button:hover {
+      background-color: #45a049;
+      border-color: #45a049;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="col-md-12">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+                 </div>
+        <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center"><br>
+          <br>
+          <h2 class="ser-title">Contact Us</h2>
+          <hr class="botm-line">
+          <p>Feel free to get in touch with us...</p>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <address>
+            <strong>Healthcare Solutions</strong><br>
+            1234 Health Ave, Dilsukhnagar<br>
+            Email: info@healthcaresolutions.com<br>
+            Phone: 78900 63800
+          </address>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <div class="contact-form">
+            <form id="contact-form" method="post" action="action.html" role="form">
+              <div class="form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <input type="email" name="email" class="form-control" id="email" placeholder="Your Email" required>
+              </div>
+              <div class="form-group">
+                <textarea name="message" class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-lg btn-block" id="form-submit">Send Message</button>
+              </div>
+              <div id="form-result"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Contact Section -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+
+</html>
